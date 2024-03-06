@@ -1,0 +1,569 @@
+Warning: Module 2: wRoEz redefinition ignored
+Symbol Table
+a=270
+qXPTu=271
+kGd=256
+p3o0fSR7p3=251
+q1oxX=285
+dselYdAFxRNLiXQK=316
+a5jZjm=9
+iu5tUc9EMxWFm=200
+rx=380
+l36rYNIyJ=367
+wRoEz=396 Error: This variable is multiple times defined; first value used
+jtxUs43R=395
+u7tkW7pI6nUARobe=389
+iEAqZ4w=397
+hRZ94dn=372
+zYmrfpUXLM=381
+iGMpCDF9akR4rvS=390
+j=435
+s1SRb7H2Nlo=493
+zD8=478
+as66aQmH=477
+h=399
+rY4zqNMU6lwS=408
+dqJ8s1=490
+u9wXXWcarbTLJ01=439
+s9X6gJDE=399
+x1fBWx1T=405
+dKq1unh1rMIKRY=447
+mJ3ee3hZxmFXMpf=435
+eTZY0TAmppZQP=475
+u9cQ12FDlz=453
+jrd=400
+
+Memory Map
+000: 3359
+001: 9000 Error: Illegal module operand ; treated as module=0
+002: 7000 Error: cSu2Wv is not defined; zero used
+003: 0000 Error: Illegal module operand ; treated as module=0
+004: 7419
+005: 1178
+006: 9000 Error: v2o is not defined; zero used
+007: 4000 Error: Illegal module operand ; treated as module=0
+008: 8438
+009: 5270
+010: 5137
+011: 8512
+012: 3000 Error: xJ4 is not defined; zero used
+013: 8000 Error: v2o is not defined; zero used
+014: 5000 Error: Illegal module operand ; treated as module=0
+015: 8292
+016: 7000 Error: Illegal module operand ; treated as module=0
+017: 0316
+018: 7270
+019: 9999 Error: Illegal opcode; treated as 9999
+020: 3144
+021: 6000 Error: v2o is not defined; zero used
+022: 8485
+023: 0000 Error: Absolute address exceeds machine size; zero used
+024: 0028
+025: 1000 Error: v2o is not defined; zero used
+026: 7253
+027: 0999 Error: Illegal immediate operand; treated as 999
+028: 0857
+029: 8000 Error: Illegal module operand ; treated as module=0
+030: 9152
+031: 3448
+032: 5505
+033: 1000 Error: nxp6Kc5zn is not defined; zero used
+034: 1117
+035: 5332
+036: 2102
+037: 5000 Error: Illegal module operand ; treated as module=0
+038: 0050
+039: 1029
+040: 0000 Error: Absolute address exceeds machine size; zero used
+041: 5000 Error: v2o is not defined; zero used
+042: 3000 Error: Illegal module operand ; treated as module=0
+043: 1174
+044: 5410
+045: 6000 Error: Illegal module operand ; treated as module=0
+046: 6000 Error: xJ4 is not defined; zero used
+047: 2000 Error: Illegal module operand ; treated as module=0
+048: 4464
+049: 3000 Error: Illegal module operand ; treated as module=0
+050: 9999 Error: Illegal opcode; treated as 9999
+051: 4169
+052: 7239
+053: 7213
+054: 8102
+055: 6000 Error: Illegal module operand ; treated as module=0
+056: 6239
+057: 8449
+058: 9205
+059: 7402
+060: 7000 Error: nxp6Kc5zn is not defined; zero used
+061: 9999 Error: Illegal opcode; treated as 9999
+062: 1000 Error: nxp6Kc5zn is not defined; zero used
+063: 0136
+064: 0138
+065: 8367
+066: 0000 Error: cSu2Wv is not defined; zero used
+067: 6049
+068: 4478
+069: 8000 Error: Illegal module operand ; treated as module=0
+070: 9000 Error: xJ4 is not defined; zero used
+071: 0266
+072: 0000 Error: Absolute address exceeds machine size; zero used
+073: 4107
+074: 8000 Error: nxp6Kc5zn is not defined; zero used
+075: 8370
+076: 7000 Error: Illegal module operand ; treated as module=0
+077: 3000 Error: nxp6Kc5zn is not defined; zero used
+078: 6467
+079: 0769
+080: 3000 Error: v2o is not defined; zero used
+081: 7410
+082: 0073
+083: 8108
+084: 6000 Error: xJ4 is not defined; zero used
+085: 3000 Error: Illegal module operand ; treated as module=0
+086: 6413
+087: 8270
+088: 4399
+089: 0425
+090: 0399
+091: 0172
+092: 5290
+093: 9000 Error: v2o is not defined; zero used
+094: 8000 Error: Illegal module operand ; treated as module=0
+095: 0252
+096: 0151
+097: 3000 Error: Illegal module operand ; treated as module=0
+098: 4000 Error: nxp6Kc5zn is not defined; zero used
+099: 1000 Error: xJ4 is not defined; zero used
+100: 0329
+101: 1422
+102: 9000 Error: Illegal module operand ; treated as module=0
+103: 5145
+104: 9270
+105: 0000 Error: xJ4 is not defined; zero used
+106: 2000 Error: v2o is not defined; zero used
+107: 9046
+108: 0000 Error: Illegal module operand ; treated as module=0
+109: 6238
+110: 3000 Error: Illegal module operand ; treated as module=0
+111: 5071
+112: 7240
+113: 3156
+114: 9000 Error: Illegal module operand ; treated as module=0
+115: 0403
+116: 4304
+117: 8281
+118: 3270
+119: 0480
+120: 8000 Error: xJ4 is not defined; zero used
+121: 8458
+122: 3000 Error: cSu2Wv is not defined; zero used
+123: 1362
+124: 7270
+125: 9331
+126: 3000 Error: Illegal module operand ; treated as module=0
+127: 6010
+128: 5000 Error: xJ4 is not defined; zero used
+129: 2000 Error: Illegal module operand ; treated as module=0
+130: 0317
+131: 2000 Error: Illegal module operand ; treated as module=0
+132: 8000 Error: Illegal module operand ; treated as module=0
+133: 4377
+134: 2318
+135: 7071
+136: 3129
+137: 9303
+138: 8000 Error: Illegal module operand ; treated as module=0
+139: 0210
+140: 3141
+141: 1000 Error: v2o is not defined; zero used
+142: 8010
+143: 2363
+144: 7293
+145: 5270
+146: 1250
+147: 5000 Error: cSu2Wv is not defined; zero used
+148: 2308
+149: 5455
+150: 1000
+151: 0446
+152: 5270
+153: 4335
+154: 2403
+155: 3000 Error: cSu2Wv is not defined; zero used
+156: 6000 Error: cSu2Wv is not defined; zero used
+157: 0225
+158: 7270
+159: 5206
+160: 0270
+161: 0358
+162: 9000 Error: Illegal module operand ; treated as module=0
+163: 9375
+164: 3134
+165: 0491
+166: 3504
+167: 9107
+168: 2000 Error: Illegal module operand ; treated as module=0
+169: 5000 Error: Illegal module operand ; treated as module=0
+170: 7426
+171: 2192
+172: 4000 Error: xJ4 is not defined; zero used
+173: 6000 Error: Illegal module operand ; treated as module=0
+174: 0281
+175: 3000 Error: v2o is not defined; zero used
+176: 4000 Error: Illegal module operand ; treated as module=0
+177: 1000 Error: Illegal module operand ; treated as module=0
+178: 0000 Error: Absolute address exceeds machine size; zero used
+179: 1056
+180: 8196
+181: 1102
+182: 4016
+183: 6000 Error: Illegal module operand ; treated as module=0
+184: 3443
+185: 4243
+186: 6000 Error: xJ4 is not defined; zero used
+187: 8329
+188: 2048
+189: 7000 Error: Illegal module operand ; treated as module=0
+190: 0659
+191: 6000 Error: cSu2Wv is not defined; zero used
+192: 5000 Error: v2o is not defined; zero used
+193: 0000 Error: Absolute address exceeds machine size; zero used
+194: 2270
+195: 1000 Error: xJ4 is not defined; zero used
+196: 6000 Error: Illegal module operand ; treated as module=0
+197: 7121
+198: 8154
+199: 0482
+200: 3146
+201: 6000 Error: Illegal module operand ; treated as module=0
+202: 5427
+203: 3417
+204: 8000 Error: v2o is not defined; zero used
+205: 3020
+206: 0004
+207: 9270
+208: 3211
+209: 7156
+210: 5000 Error: nxp6Kc5zn is not defined; zero used
+211: 6496
+212: 7000 Error: Illegal module operand ; treated as module=0
+213: 0795
+214: 9000 Error: External operand exceeds length of uselist; treated as relative=0
+215: 9240
+216: 9000 Error: nxp6Kc5zn is not defined; zero used
+217: 9270
+218: 5257
+219: 4475
+220: 4000 Error: v2o is not defined; zero used
+221: 8000 Error: Illegal module operand ; treated as module=0
+222: 8270
+223: 9000 Error: cSu2Wv is not defined; zero used
+224: 4363
+225: 8000 Error: Illegal module operand ; treated as module=0
+226: 7453
+227: 2503
+228: 7000 Error: nxp6Kc5zn is not defined; zero used
+229: 8000 Error: Illegal module operand ; treated as module=0
+230: 5343
+231: 5000 Error: Illegal module operand ; treated as module=0
+232: 5410
+233: 1000 Error: Illegal module operand ; treated as module=0
+234: 1270
+235: 6000 Error: Illegal module operand ; treated as module=0
+236: 0710
+237: 0000 Error: Illegal module operand ; treated as module=0
+238: 8000 Error: External operand exceeds length of uselist; treated as relative=0
+239: 4000 Error: v2o is not defined; zero used
+240: 8151
+241: 7550
+242: 9184
+243: 9338
+244: 7000 Error: v2o is not defined; zero used
+245: 9307
+246: 1330
+247: 2340
+248: 5344
+249: 9193
+250: 4343
+251: 3032
+252: 7270
+253: 0330
+254: 3358
+255: 9000 Error: Illegal module operand ; treated as module=0
+256: 3488
+257: 2426
+258: 7000 Error: Illegal module operand ; treated as module=0
+259: 3348
+260: 3000 Error: External operand exceeds length of uselist; treated as relative=0
+261: 7175
+262: 6186
+263: 3000 Error: cSu2Wv is not defined; zero used
+264: 0228
+265: 5179
+266: 8142
+267: 5000 Error: xJ4 is not defined; zero used
+268: 6237
+269: 8345
+270: 1000 Error: xJ4 is not defined; zero used
+271: 8225
+272: 5000 Error: xJ4 is not defined; zero used
+273: 1000 Error: Illegal module operand ; treated as module=0
+274: 5207
+275: 0080
+276: 7000 Error: Illegal module operand ; treated as module=0
+277: 8251
+278: 3368
+279: 4082
+280: 4000 Error: Illegal module operand ; treated as module=0
+281: 6000 Error: Illegal module operand ; treated as module=0
+282: 3000 Error: v2o is not defined; zero used
+283: 6000 Error: cSu2Wv is not defined; zero used
+284: 3000 Error: Illegal module operand ; treated as module=0
+285: 9999 Error: Illegal opcode; treated as 9999
+286: 5126
+287: 9449
+288: 2363
+289: 0518
+290: 8342
+291: 5000 Error: Illegal module operand ; treated as module=0
+292: 0472
+293: 5479
+294: 0001
+295: 7327
+296: 9210
+297: 0680
+298: 0337
+299: 9000 Error: Illegal module operand ; treated as module=0
+300: 1250
+301: 1261
+302: 7000 Error: Illegal module operand ; treated as module=0
+303: 9030
+304: 3041
+305: 2386
+306: 9000 Error: Illegal module operand ; treated as module=0
+307: 7278
+308: 2000 Error: xJ4 is not defined; zero used
+309: 6000 Error: Illegal module operand ; treated as module=0
+310: 0269
+311: 2000 Error: Illegal module operand ; treated as module=0
+312: 3000 Error: v2o is not defined; zero used
+313: 3475
+314: 9000 Error: cSu2Wv is not defined; zero used
+315: 4310
+316: 3181
+317: 7279
+318: 1399
+319: 1000 Error: Illegal module operand ; treated as module=0
+320: 8315
+321: 7385
+322: 0288
+323: 3000 Error: xJ4 is not defined; zero used
+324: 3327
+325: 3000 Error: Illegal module operand ; treated as module=0
+326: 4000 Error: nxp6Kc5zn is not defined; zero used
+327: 9000
+328: 9078
+329: 9000 Error: nxp6Kc5zn is not defined; zero used
+330: 7000 Error: Illegal module operand ; treated as module=0
+331: 1000 Error: Illegal module operand ; treated as module=0
+332: 9464
+333: 5306
+334: 2000 Error: Illegal module operand ; treated as module=0
+335: 9210
+336: 0284
+337: 5233
+338: 8256
+339: 6000 Error: Illegal module operand ; treated as module=0
+340: 5000 Error: Illegal module operand ; treated as module=0
+341: 6122
+342: 8379
+343: 0562
+344: 7000 Error: Illegal module operand ; treated as module=0
+345: 0071
+346: 3000 Error: External operand exceeds length of uselist; treated as relative=0
+347: 0392
+348: 9000 Error: xJ4 is not defined; zero used
+349: 0241
+350: 6292
+351: 9000 Error: v2o is not defined; zero used
+352: 7000 Error: nxp6Kc5zn is not defined; zero used
+353: 0275
+354: 9000 Error: v2o is not defined; zero used
+355: 4000 Error: Illegal module operand ; treated as module=0
+356: 4288
+357: 7255
+358: 9412
+359: 8000 Error: xJ4 is not defined; zero used
+360: 2089
+361: 6270
+362: 0000 Error: Illegal module operand ; treated as module=0
+363: 4336
+364: 5000 Error: nuSj465U8aSArq is not defined; zero used
+365: 7358
+366: 3378
+367: 3318
+368: 2396
+369: 7378
+370: 1370
+371: 7392
+372: 2415
+373: 6000 Error: Illegal module operand ; treated as module=0
+374: 4379
+375: 0000 Error: Absolute address exceeds machine size; zero used
+376: 1328
+377: 0275
+378: 3253
+379: 7316
+380: 1000 Error: nuSj465U8aSArq is not defined; zero used
+381: 3000 Error: Illegal module operand ; treated as module=0
+382: 2487
+383: 5000 Error: tKMz6eFtNhLhg is not defined; zero used
+384: 5000 Error: Illegal module operand ; treated as module=0
+385: 1000 Error: Illegal module operand ; treated as module=0
+386: 4000 Error: zJcGGndxa is not defined; zero used
+387: 7265
+388: 2374
+389: 3000 Error: tKMz6eFtNhLhg is not defined; zero used
+390: 8327
+391: 3000 Error: Illegal module operand ; treated as module=0
+392: 0000 Error: Illegal module operand ; treated as module=0
+393: 1366
+394: 9000 Error: Illegal module operand ; treated as module=0
+395: 1316
+396: 3000 Error: zJcGGndxa is not defined; zero used
+397: 6000 Error: tKMz6eFtNhLhg is not defined; zero used
+398: 0472
+Warning: Module 1: uselist[0]=sdOyq was not used
+399: 6299
+400: 8412
+401: 3473
+402: 3408
+403: 4163
+404: 4000 Error: Illegal module operand ; treated as module=0
+405: 7169
+406: 7226
+407: 6430
+408: 9473
+409: 0159
+410: 5417
+411: 0331
+412: 0000 Error: Illegal module operand ; treated as module=0
+413: 0438
+414: 6194
+415: 6409
+416: 0667
+417: 4466
+418: 7000 Error: Illegal module operand ; treated as module=0
+419: 1148
+420: 5000 Error: Illegal module operand ; treated as module=0
+421: 8511
+422: 0469
+423: 6284
+424: 3216
+425: 8425
+426: 3472
+427: 0081
+428: 3436
+429: 1419
+430: 9000 Error: Illegal module operand ; treated as module=0
+431: 7000 Error: bYs5dMlVdhRRC is not defined; zero used
+432: 7492
+433: 5355
+434: 1500
+435: 7489
+436: 0000 Error: Illegal module operand ; treated as module=0
+437: 0255
+438: 0000 Error: Illegal module operand ; treated as module=0
+439: 9445
+440: 3395
+441: 9000 Error: Illegal module operand ; treated as module=0
+442: 6399 Error: External operand exceeds length of uselist; treated as relative=0
+443: 6403
+444: 0000 Error: Illegal module operand ; treated as module=0
+445: 3000 Error: Illegal module operand ; treated as module=0
+446: 6485
+447: 0073
+448: 4441
+449: 2470
+450: 7404
+451: 0486
+452: 4127
+453: 4114
+454: 3457
+455: 8435
+456: 0740
+457: 2272
+458: 9456
+459: 9999 Error: Illegal opcode; treated as 9999
+460: 8399 Error: Relative address exceeds module size; relative zero used
+461: 0000 Error: Absolute address exceeds machine size; zero used
+462: 9999 Error: Illegal opcode; treated as 9999
+463: 3000 Error: Illegal module operand ; treated as module=0
+464: 1000 Error: kAQTAToFlMs is not defined; zero used
+465: 9000 Error: uX is not defined; zero used
+466: 6000 Error: Illegal module operand ; treated as module=0
+467: 0462
+468: 7000 Error: Illegal module operand ; treated as module=0
+469: 3464
+470: 6441
+471: 3319
+472: 8151
+473: 7103
+474: 7000 Error: guNPpNrkt6 is not defined; zero used
+475: 3000 Error: z is not defined; zero used
+476: 4000 Error: Illegal module operand ; treated as module=0
+477: 3429
+478: 8000 Error: guNPpNrkt6 is not defined; zero used
+479: 1411
+480: 4455
+481: 6426
+482: 7407
+483: 3399
+484: 9000 Error: Illegal module operand ; treated as module=0
+485: 1000 Error: Illegal module operand ; treated as module=0
+486: 9460
+487: 8426
+488: 2000 Error: bYs5dMlVdhRRC is not defined; zero used
+489: 2510
+490: 8493
+491: 6168
+492: 7396
+493: 2000 Error: Illegal module operand ; treated as module=0
+494: 5000 Error: bYs5dMlVdhRRC is not defined; zero used
+495: 5277
+496: 9000 Error: Illegal module operand ; treated as module=0
+Warning: Module 2: uselist[0]=ngcMS8P3d7bu8UO was not used
+Warning: Module 2: uselist[1]=s4PSzkYhLax was not used
+Warning: Module 2: uselist[2]=hRZ94dn was not used
+Warning: Module 2: uselist[8]=xtIKojetx was not used
+
+Warning: Module 0: qXPTu was defined but never used
+Warning: Module 0: kGd was defined but never used
+Warning: Module 0: p3o0fSR7p3 was defined but never used
+Warning: Module 0: q1oxX was defined but never used
+Warning: Module 0: a5jZjm was defined but never used
+Warning: Module 0: iu5tUc9EMxWFm was defined but never used
+Warning: Module 1: rx was defined but never used
+Warning: Module 1: l36rYNIyJ was defined but never used
+Warning: Module 1: wRoEz was defined but never used
+Warning: Module 1: u7tkW7pI6nUARobe was defined but never used
+Warning: Module 1: iEAqZ4w was defined but never used
+Warning: Module 1: hRZ94dn was defined but never used
+Warning: Module 1: zYmrfpUXLM was defined but never used
+Warning: Module 1: iGMpCDF9akR4rvS was defined but never used
+Warning: Module 2: j was defined but never used
+Warning: Module 2: s1SRb7H2Nlo was defined but never used
+Warning: Module 2: zD8 was defined but never used
+Warning: Module 2: as66aQmH was defined but never used
+Warning: Module 2: h was defined but never used
+Warning: Module 2: rY4zqNMU6lwS was defined but never used
+Warning: Module 2: dqJ8s1 was defined but never used
+Warning: Module 2: u9wXXWcarbTLJ01 was defined but never used
+Warning: Module 2: s9X6gJDE was defined but never used
+Warning: Module 2: x1fBWx1T was defined but never used
+Warning: Module 2: dKq1unh1rMIKRY was defined but never used
+Warning: Module 2: mJ3ee3hZxmFXMpf was defined but never used
+Warning: Module 2: eTZY0TAmppZQP was defined but never used
+Warning: Module 2: u9cQ12FDlz was defined but never used
+Warning: Module 2: jrd was defined but never used
+

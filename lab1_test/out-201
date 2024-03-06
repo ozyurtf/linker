@@ -1,0 +1,143 @@
+Symbol Table
+yTU3cYe=77
+pKBS=51
+gAWiqXo=21
+vFkzH5C8WbA=65
+zQuW=84
+rJ9nkwo=70
+a6Bwr=35
+h1cOb6naz0pD1=32
+uAbr0m14CC0ePHe=21
+ySE7X=62
+
+Memory Map
+000: 0789
+001: 8000 Error: oTB is not defined; zero used
+002: 3208
+003: 9999 Error: Illegal opcode; treated as 9999
+004: 0031
+005: 4082
+006: 5462
+007: 3000 Error: Illegal module operand ; treated as module=0
+008: 0299
+009: 0000 Error: Illegal module operand ; treated as module=0
+010: 2370
+011: 6344
+012: 3000 Error: Illegal module operand ; treated as module=0
+013: 3000 Error: ueuLyJzRrYePsw4 is not defined; zero used
+014: 2338
+015: 5006
+016: 7482
+017: 1000 Error: Illegal module operand ; treated as module=0
+018: 2000 Error: zrL is not defined; zero used
+019: 0770
+020: 0232
+021: 2027
+022: 9000 Error: Relative address exceeds module size; relative zero used
+023: 5020
+024: 4000 Error: zrL is not defined; zero used
+025: 1229
+026: 4000 Error: Illegal module operand ; treated as module=0
+027: 2098
+028: 8029
+029: 1000 Error: pHb1 is not defined; zero used
+030: 0043
+031: 2000 Error: Illegal module operand ; treated as module=0
+032: 0293
+033: 1000 Error: Illegal module operand ; treated as module=0
+034: 2000 Error: Illegal module operand ; treated as module=0
+035: 6000 Error: Illegal module operand ; treated as module=0
+036: 3106
+037: 5321
+038: 5202
+039: 2071
+040: 0278
+041: 2070
+042: 7000 Error: Illegal module operand ; treated as module=0
+043: 2024
+044: 0035
+045: 0999 Error: Illegal immediate operand; treated as 999
+046: 4000 Error: pHb1 is not defined; zero used
+047: 5051
+048: 1021
+049: 8401
+050: 0582
+051: 5444
+052: 0337
+053: 8000 Error: Illegal module operand ; treated as module=0
+054: 0464
+055: 3166
+056: 0000 Error: Illegal module operand ; treated as module=0
+057: 0285
+058: 1042
+059: 2160
+060: 7000 Error: yKrFkD2ELwVY is not defined; zero used
+061: 0322
+062: 7000 Error: Illegal module operand ; treated as module=0
+063: 0618
+064: 6000 Error: Illegal module operand ; treated as module=0
+065: 2000 Error: Illegal module operand ; treated as module=0
+066: 9000 Error: Illegal module operand ; treated as module=0
+067: 1000 Error: Illegal module operand ; treated as module=0
+068: 7000
+069: 5013
+070: 0000 Error: Absolute address exceeds machine size; zero used
+071: 6000 Error: Illegal module operand ; treated as module=0
+072: 9074
+073: 9262
+074: 6000 Error: yKrFkD2ELwVY is not defined; zero used
+075: 4000 Error: Relative address exceeds module size; relative zero used
+076: 7021
+077: 2159
+078: 9301
+079: 2071
+080: 7247
+081: 0020
+082: 0753
+083: 9000 Error: Illegal module operand ; treated as module=0
+084: 1478
+085: 1118
+086: 2000 Error: Illegal module operand ; treated as module=0
+087: 0381
+088: 0007
+089: 7465
+090: 0000 Error: amNlP8Cx83 is not defined; zero used
+091: 8000 Error: Illegal module operand ; treated as module=0
+092: 0232
+093: 4257
+094: 6000 Error: Illegal module operand ; treated as module=0
+095: 6000 Error: Illegal module operand ; treated as module=0
+096: 0031
+097: 6000 Error: Illegal module operand ; treated as module=0
+098: 3375
+099: 4462
+100: 1042
+101: 3439
+102: 7000
+103: 2000 Error: Illegal module operand ; treated as module=0
+104: 1000 Error: Illegal module operand ; treated as module=0
+105: 4000 Error: Illegal module operand ; treated as module=0
+106: 1016
+107: 1222
+Warning: Module 0: uselist[0]=b was not used
+Warning: Module 0: uselist[1]=ajGV72Gmj was not used
+Warning: Module 0: uselist[2]=zKixTsuKNuh was not used
+Warning: Module 0: uselist[4]=k2qBEZ0a7C1uS5l was not used
+Warning: Module 0: uselist[7]=c5j6HcC0F3aR8r was not used
+Warning: Module 0: uselist[9]=kdw8Q9l7Mx6M was not used
+Warning: Module 0: uselist[11]=glVsEVGQL was not used
+Warning: Module 0: uselist[12]=lTYo was not used
+Warning: Module 0: uselist[13]=ro1OP was not used
+Warning: Module 0: uselist[14]=zDrDsAU7 was not used
+
+Warning: Module 0: yTU3cYe was defined but never used
+Warning: Module 0: pKBS was defined but never used
+Warning: Module 0: gAWiqXo was defined but never used
+Warning: Module 0: vFkzH5C8WbA was defined but never used
+Warning: Module 0: zQuW was defined but never used
+Warning: Module 0: rJ9nkwo was defined but never used
+Warning: Module 0: a6Bwr was defined but never used
+Warning: Module 0: h1cOb6naz0pD1 was defined but never used
+Warning: Module 0: uAbr0m14CC0ePHe was defined but never used
+Warning: Module 0: ySE7X was defined but never used
+
