@@ -251,6 +251,10 @@ Here fetching means retrieving instruction from the memory. Decoding means inter
 ----------------------------
 ```
 
+# CPU Caches 
+
+
+
 
 
 # Note 
