@@ -7,7 +7,7 @@
 - Keyboard
 - Mouse
 - Display
-- Network interfaces *(hardware components that connect the computer or some other device to a computer network. They enable the device to send/receive data over the network)*
+- Network interfaces *(hardware components that connect the computer or some other device to a computer network. Through this way, they enable the device to send/receive data over the network)*
 - IO devices
 
 ```
@@ -22,15 +22,15 @@
 ---------------------------------------------------------------------------
 ```
 
-Note that the although Operating System is interacting with the hardware, it is not a physical component of the hardware. It is made up from programs, code, and data that are used to manage the hardware and resources. Therefore the operating system is seen as a **software**. Like any other software, it is written to follow some instructions and it is installed on a computer's storage device (e.g. hard drive).
+Note that the although operating system is interacting with the hardware, it is **not a physical component of the hardware**. It is made up from **programs**, **code**, and **data** that are **used to manage the hardware and resources**. Therefore the operating system is seen as a **software**. Like any other software, it is written to follow some instructions and it is installed on a computer's storage device (e.g. hard drive).
 
-If we want to define in another way, the operating system turns the ugly hardware into beautiful abstractions. In other words, it provides a user-friendly way to interact with the hardware which is quite complex to deal with directly. 
+If we want to define in another way, operating system **turns the ugly hardware** **into beautiful abstractions**. In other words, it **provides a user-friendly way to interact with the hardware** which is quite complex to deal with directly. 
 
-Now let's take a look at the roles of the operating system in more detail.
+Because the operating system manages the hardware resources, it can be seen as **resource manager** as well. 
+
+Now let's take a look at the roles of the operating system from this perspective.
 
 # Operating System as a Resource Manager
-
-Because the operating system manage the hardware resources, it can be seen as **resource manager** as well. 
 
 If we look from the top to the down **(top down view)** in this representation: 
 
@@ -46,13 +46,11 @@ If we look from the top to the down **(top down view)** in this representation:
 ---------------------------------------------------------------------------
 ```
 
-the operating system **provides abstractions to application programs** (e.g. Music Player, Web Browser, etc.). Abstractions in here are more **simple representations of the hardware**. By providing these abstractions, it becomes more easy for the user to manage his tasks. 
+the operating system **provides abstractions to application programs** (e.g. Music Player, Web Browser, etc.). Abstractions in here mean **simple representations of the hardware**. By providing these simple representations, it becomes more easy for the users and programmers to manage their tasks because they won't have to deal with the complexities of the hardware since these complexities and details will be hidden in these simple representations. 
 
 If we look from the bottom to up **(bottom up view),** the operating system **manages the various components of the hardware**. Some of the tasks that are related to managing hardware might be CPU scheduling, allocating memory, etc.
 
-And if we want to look from another perspective **(alternative view),** the goal of the operating systems is to **allocate the hardware resource in a structured, organized, and efficient manner**. 
-
-Okay now it is time to emphasize the main responsibilities/tasks of the operating system after giving all these knowledge.
+And if we want to look from another perspective **(alternative view),** the goal of the operating systems is to **allocate the hardware resources in a structured, organized, and efficient manner**. 
 
 # Two Main Tasks of Operating System
 
@@ -60,11 +58,13 @@ Okay now it is time to emphasize the main responsibilities/tasks of the operatin
 
 - Another main task of the operating system is to **manage the hardware resources.**
 
-But now the question is how does the hardware look like ? Also what kind of resources the operating system manages and what kind of services it provides by using these resources ? Let's answer these questions one by one.
+But how does the hardware look like ? Also what kind of resources the operating system manages and what kind of services it provides by using these resources ? Let's answer these questions one by one.
 
 # Hardware 
 
-The **hardware resources/components are linked with each other through a data channel**. This data channel is called **bus** and it is basically a **collection of wires on a circuit board that carries signals and data between the these components**. Different components of the hardware can communicate with each other by using this bus. And the communication is done through various types of bus transactions. 
+CPU, main memory (RAM), storage devices (e.g., hard disk drives, solid state drives, etc.), IO devices (e.g., keyboards, mouse, etc.), GPU resources, network resources are some of the examples of the hardware components/resources that are managed by the operating system. 
+
+And these **hardware resources/components are linked with each other through various communication channels**. An example of a communication channel is **bus** and it is basically a **collection of wires on a circuit board that carries signals and data between the these components**. Different components of the hardware can communicate with each other by using this bus. And the communication is done through various types of bus transactions. 
 
 Bus transactions are operations that the hardware components use to exchange data. Some of the examples of the bus transactions are: 
 
@@ -73,7 +73,9 @@ Bus transactions are operations that the hardware components use to exchange dat
 - Device accesses (When the CPU or other hardware component needs to communicate with devices such as storage devices, network interfaces, they initiatie device access transactions on the bus)
 - ...
 
-# Resources 
+If we turn back to the hardware components that are managed by the operating system; what do we mean actually by managing these resources ? 
+
+# Managing Resources 
 
 ## Allocation
 
@@ -84,7 +86,7 @@ We need to **allocate the resources to provide services**. And many of the resou
 - Disk
 - Network
 
-are very limited. So somebody has to decide which entity should get these resources at any given time for example.
+are very limited. So somebody has to decide which entity should get these resources at any given time for example. And this somebody is operating system.
 
 ## Protection
 
@@ -98,17 +100,40 @@ In addition, when the programs/application ends (either because of an error or t
 
 ## Virtualization
 
-Virtualization is a method that allows the users to create the **virtual version** of resource(s). It **abstracts the real characteristics of the resource(s) and presents them in a new way that is easier, more efficient, and flexible to deal with.**
+Virtualization is a method that allows the users to create the **virtual version** of resource(s). It **abstracts the real characteristics of the resource(s) and presents them in a new way that is easier, more efficient, and flexible to deal with**.
 
-When we virtualize a physical resource, we hide the complexities and the details of this resource and create more simple view of this resource. This new virtualized resource can be seen as a layer between the physical resource and the application that will use that physical resource. After virtualizing a resource, the application will use this virtualized resource to access to the physical resource. 
+When we virtualize a physical resource, we hide the complexities and the details of this resource and create more simple view of this resource. This new virtualized resource can be seen as a layer between the physical resource and the application that access to that physical resource. After virtualizing a resource, the application will use this virtualized resource to access to the physical resource. 
 
-And we can create this layer in such a way that when the program needs more resources, the layer can allocate additional virtual resources to it by drawing resources from the available pool of physical resources. In other words, the virtual resources can be dynamically allocated and adjusted based on demand. That's why this results in the **illusion of infinite private resources**.
+We can create this layer in such a way that when the program needs more resources in time, the layer can allocate additional virtual resources to it by drawing resources from the available pool of physical resources. In that case, the virtual resources can be dynamically allocated and adjusted based on demand. That's why this results in the **illusion of infinite private resources**.
 
-# Services 
+So we explained what do we mean when we say that operating system manages the resources but what are the services that the operating system provides by managing these resources ? 
 
-When the operating system presents the storage devices as files and directories in a hierarchical structure, this can be given as an example of abstraction. Because now the user can interact with the files and directories in a simple way without worrying about the complexities and details of how the data is stored physically in the storage devices in the hardware. 
+# Operating System Services 
 
-In another example, the operating system can present the physical memory as a large space of virtual addresses. In that case, each virtual address in that space can point to a different address location in the physical memory. And the programs can use this space of the virtual addresses to read the data in a specific address of the physical memory. Representing the physical memory this way allows the programs to operate like they have access to a large memory space even though the memory is limited.
+- Program development
+Operating system **provides tools** such as **compilers, debuggers, IDEs** that are useful for **program development.**
+
+- Program execution
+It is also responsible from **executing programs** by **loading these programs into memory**, **allocating whatever resources they need**, and **starting their execution**.
+
+- Access to IO devices
+IO devices are **keyboards, mouse, printers**, etc. Operating system **manages the access to these devices**.
+
+- Controlled access to files
+**File creation, deletion, reading, writing are the services that are provided by the operating system to access to the data in storage devices**. And operating system implements control mechanisms to **ensure** that the **files are accessed by authorized users**.
+
+- System access
+Operating system also **controls access to the system resources and services**. It implements user authentication and provides user accounts, passwords, etc. to provide unauthorized access to the system resources. It also enables the users to make a request whenever they want to access to the services provided by the operating system (e.g., opening a file, reading data from a file, writing data to a file, etc.). This request is also called **system call** (e,g,. open(), read(), write(), etc.)
+
+- Error detection and response
+When the program is executed or in any other system operation, an error may occur. Operating system **provides error handling and exception mechanisms, takes corrective actions for these errors, and displays these errors to the users.**
+
+- Accounting
+**Recording the resource usage/consumption/utilization** is another service provided by the operating system.
+
+In addition, we talked about what abstraction is previously. When the operating system presents the **storage devices** as **files and directories** in a hierarchical structure, for example, this can be given as an example of a **service** provided to the user. Because now the user can interact with the files and directories in a simple way without worrying about the complexities and details of how the data is stored physically in the storage devices in the hardware. 
+
+In another example, the operating system can **present** the **physical memory addresses** as a **large space of virtual addresses**. In that case, each virtual address in this large space can point to a different address location in the physical memory. And the programs can use this large space of the virtual addresses to read/write the data in a specific address of the physical memory. This can be seen as a service as well. Representing the physical memory this way allows the programs to operate like they have access to a large memory space even though the memory is limited.
 
 So these kinds of services brings **abstraction**, **simplification** and **convenience** for the users. Operating systems also ensures consistent and predictable environment for applications and users. This is the another service of the operating systems and it can be called as **standardization**.
 
@@ -144,29 +169,6 @@ Okay but what are the different types of operating systems ? And what are the di
 
 So at the end, the operating system should provide **convenience** to users and programmers by creating an environment that is easy to deal with the underlying hardware of the computers/devices. It should provide **efficiency** to the users and progammers while ensuring efficient usage of the resources. Lastly, as the new technologies emerge in the hardware, operating system should be able to **evolve** and **adapt to these changes** in a flexible manner.
 
-# Operating System Services 
-
-- Program development
-Operating system **provides tools** such as **compilers, debuggers, IDEs** that are useful for **program development.**
-
-- Program execution
-It is also responsible from **executing programs** by **loading these programs into memory**, **allocating whatever resources they need**, and **starting their execution**.
-
-- Access to IO devices
-IO devices are **keyboards, mouse, printers**, etc. Operating system **manages the access to these devices**.
-
-- Controlled access to files
-**File creation, deletion, reading, writing are the services that are provided by the operating system to access to the data in storage devices**. And operating system implements control mechanisms to **ensure** that the **files are accessed by authorized users**.
-
-- System access
-Operating system also **controls access to the system resources and services**. It implements user authentication and provides user accounts, passwords, etc. to provide unauthorized access to the system resources. It also enables the users to make a request whenever they want to access to the services provided by the operating system (e.g., opening a file, reading data from a file, writing data to a file, etc.). This request is also called **system call** (e,g,. open(), read(), write(), etc.)
-
-- Error detection and response
-When the program is executed or in any other system operation, an error may occur. Operating system **provides error handling and exception mechanisms, takes corrective actions for these errors, and displays these errors to the users.**
-
-- Accounting
-**Recording the resource usage/consumption/utilization** is another service provided by the operating system.
-
 # Hardware and Software Infrastructure
 
 ```
@@ -197,6 +199,18 @@ So operating system is manager, and the programs, applications, and processes ar
 
 # CPU/Processor 
 
+CPU is basically a chip that is made up from electronic components that are called transistors. Its primary job is to execute the instructions and perform operations on the data. 
+
+Imagine that you ran a program in your computer. This program includes some set of instructions. And these instructions are sent to the CPU. Then CPU follows these instructions step by step to do the required tasks specified in the program. And while doing that, it can retrieve the data from the memory, manipulate that data according to the instructions, and then store the results back in the memory or maybe send them to monitor, or printer for instance. 
+
+CPU generally has one or more cores. These **cores** are **physical processing units** that are **responsible from executing instructions** and performing computations in general. 
+
+And we can divide the core into three groups: 
+
+- Memory: In core, a **memory unit** is built to store & transfer information fastly/efficiently. This memory unit consists of **registers** and **cache**.
+- Control Unit: These units **fetches** the **instructions** that are represented as bits from the memory unit, and **translates** those **instructions** into **electricity** or maybe light so that they can be **sent** to **other parts of the computer as signal**. 
+- Arithmetic Logic Unit: This unit includes **electronic circuits**. And these circuits are responsible from **arithmetic and logic operations**. 
+
 Each CPU has a specific set of instructions that are represented in binary form to follow. And this set of instructions is called **Instruction Set Architecture (ISA)**. 
 
 In addition, CPUs contains a special storage locations within themselves to hold **data, instructions, memory addresses, etc.** **during the execution of a program**. They are very close to the execution units of the processors and that's why they can provide much faster access to the data when they are needed during the execution of a program compared to data in main memory or disk. 
@@ -212,9 +226,7 @@ We can group the registers under different categories:
 
 # How Processors Work ? 
 
-
 **CPU Cycles**: 
-
 
 ```
 Fetch unit -> Decode unit -> Execute unit
@@ -247,14 +259,17 @@ Here fetching means retrieving instruction from the memory. Decoding means inter
    -------------------
       Magnetic disk
   -----------------------
-       Magnetic tape
+      Magnetic tape
 ----------------------------
 ```
 
+- Registers are fasters accessible storage units within the CPU. They hold the data, instructions, and addresses that are immediately needed for execution. 
+- Cache is another fast storage unit. It is located near the CPU. It acts like a temporary storage between the CPU and main memory. It stores frequently accessed data and instructions. It is faster to access to the data in cache compared to the main memory, magnetic disk, and magnetic tape but slower compared to the registers.
+- Main memory is the primary storage location for data and instructions during the execution of a program. It holds the data of the currently running program.
+- Magnetic disks are another storage units that have larger capacities compared to main memory, cache, and register. They continue storing the data even when they are turned off unlike main memory.
+- Magnetic tape has the largest capacities among all the options. It is often used for backup and archival purposes. Like in magnetic disks, the data are stored even if the magnetic tape is turned off. 
+
 # CPU Caches 
-
-
-
 
 
 # Note 
