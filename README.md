@@ -106,15 +106,33 @@ And we can create this layer in such a way that when the program needs more reso
 
 # Services 
 
-## Abstraction 
+When the operating system presents the storage devices as files and directories in a hierarchical structure, this can be given as an example of abstraction. Because now the user can interact with the files and directories in a simple way without worrying about the complexities and details of how the data is stored physically in the storage devices in the hardware. 
 
-When the operating system presents the storage devices as files and directories in a hierarchical structure, this can be given as an example of abstraction and also service. Because now the user can interact with the files and directories in a simple way without worrying about the complexities and details of how the data is stored physically in the storage devices in the hardware. 
-
-In another example, the operating system can present the physical memory as a list of strings. In that case, each string can point to a different location in the physical memory. And the programs can use this list of strings to read the data in a specific address of the physical memory, for example. Representing the physical memory this way allows the programs to operate like they have access to a large memory space even though the memory is limited.
+In another example, the operating system can present the physical memory as a large space of virtual addresses. In that case, each virtual address in that space can point to a different address location in the physical memory. And the programs can use this space of the virtual addresses to read the data in a specific address of the physical memory. Representing the physical memory this way allows the programs to operate like they have access to a large memory space even though the memory is limited.
 
 So these kinds of services brings abstraction, simplification and convenience for the users. Operating systems also ensures consistent and predictable environment for applications and users. This is the another service of the operating systems and it can be called as standardization.
 
-At the end of the day, what the operating system provides is the containers of these resources. And this should make the usage of the computer simpler.
+At the end of the day, operating system is just a program that runs with special privileges to implement allocation, protection, reclamation, virtualization, and the services that are structured on top of it. 
+
+If we want to look from a different perspective, operating system provides a containers of resources. And this should make the usage of the computer simpler.
+
+Okay but what are the different types of operating systems ? And what are the different operating systems architectures ? 
+
+# Operating Systems Types 
+
+- Mainframe operating system
+  - Designed for processor-intensive computing tasks
+  - It is used by large organizations
+  - They can handle massive amount of data processing, transaction processing, and batch processing
+- Server operating system
+  - Designed to run on servers
+  - Provides services to other computers or devices over a network
+- Multiprocessor operating system
+  - Designed to manage the system with multiple processors
+- Personal Computer (PC) operating system
+- Embedded operating system
+- Real-Time operating system
+- Smart card operating system     
 
 # Note 
 
