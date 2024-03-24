@@ -30,9 +30,9 @@ Now let's take a look at the roles of the operating system in more detail.
 
 # Operating System as a Resource Manager
 
-Because the operating system manage the hardware resources, it can be seen as resource manager as well. 
+Because the operating system manage the hardware resources, it can be seen as **resource manager** as well. 
 
-If we look from the top to the down (top down view) in this representation: 
+If we look from the top to the down **(top down view)** in this representation: 
 
 ```
 ---------------------------------------------------------------------------
@@ -46,25 +46,25 @@ If we look from the top to the down (top down view) in this representation:
 ---------------------------------------------------------------------------
 ```
 
-the operating system provides abstractions to application programs (e.g. Music Player, Web Browser, etc.). Abstractions in here are more simple representations of the hardware. By providing these abstractions, it becomes more easy for the user to manage his tasks. 
+the operating system **provides abstractions to application programs** (e.g. Music Player, Web Browser, etc.). Abstractions in here are more **simple representations of the hardware**. By providing these abstractions, it becomes more easy for the user to manage his tasks. 
 
-If we look from the bottom to up (bottom up view), the operating system manages the various components of the hardware. Some of the tasks that are related to managing hardware might be CPU scheduling, allocating memory, etc.
+If we look from the bottom to up **(bottom up view),** the operating system **manages the various components of the hardware**. Some of the tasks that are related to managing hardware might be CPU scheduling, allocating memory, etc.
 
-And if we want to look from another perspective (alternative view), the goal of the operating systems allocates the hardware resource in a structured, organized, and efficient manner. 
+And if we want to look from another perspective **(alternative view),** the goal of the operating systems is to **allocate the hardware resource in a structured, organized, and efficient manner**. 
 
 Okay now it is time to emphasize the main responsibilities/tasks of the operating system after giving all these knowledge.
 
 # Two Main Tasks of Operating System
 
-- One of the main tasks of the operating system is to provide programmers a well-defined/organized/clean set of abstract resources. These abstract resources can be used by the progammer to manipulate/interact with the hardware resources.
+- One of the main tasks of the operating system is to **provide programmers a well-defined/organized/clean set of abstract resources.** These abstract resources can be used by the progammer to manipulate/interact with the hardware resources.
 
-- Another main task of the operating system is to manage the hardware resources.
+- Another main task of the operating system is to **manage the hardware resources.**
 
 But now the question is how does the hardware look like ? Also what kind of resources the operating system manages and what kind of services it provides by using these resources ? Let's answer these questions one by one.
 
 # Hardware 
 
-The hardware resources/components are linked with each other through a data channel. This data channel is called bus and it is basically a collection of wires on a circuit board that carries signals and data between the these components. Different components of the hardware can communicate with each other by using this bus. And the communication is done through various types of bus transactions. 
+The **hardware resources/components are linked with each other through a data channel**. This data channel is called **bus** and it is basically a **collection of wires on a circuit board that carries signals and data between the these components**. Different components of the hardware can communicate with each other by using this bus. And the communication is done through various types of bus transactions. 
 
 Bus transactions are operations that the hardware components use to exchange data. Some of the examples of the bus transactions are: 
 
@@ -77,7 +77,7 @@ Bus transactions are operations that the hardware components use to exchange dat
 
 ## Allocation
 
-We need to allocate the resources to provide services. And many of the resources such as 
+We need to **allocate the resources to provide services**. And many of the resources such as 
 
 - CPU
 - Memory
@@ -88,17 +88,17 @@ are very limited. So somebody has to decide which entity should get these resour
 
 ## Protection
 
-Protection of the resources when they are being used for an application is also very important concept in the operating system. If an application is running and using the resources, another application should not interfere with that application. 
+Protection of the resources when they are being used for an application is also very important concept in the operating system. **If an application is running and using the resources, another application should not interfere with that application.** 
 
 ## Reclamation 
 
-The operating system provides the resources but if there are demands for these resources from other programs/application, then the operating system has to be able to take these resources back and give them to the new program/application at some point. 
+The operating system provides the resources but if there are demands for these resources from other programs/application, then the operating system should be able to take these resources back and give them to the new program/application at some point. 
 
-In addition, when the programs/application ends (either because of an error or they finished their executions), the resources should be reclaimed as well. It is the operating system's responsibility to track the resources and reclaim once they are not being used. 
+In addition, when the programs/application ends (either because of an error or they finished their executions), the resources should be reclaimed as well. **It is the operating system's responsibility to track the resources and reclaim once they are not being used anymore.**
 
 ## Virtualization
 
-Virtualization is a method that allows the users to create the **virtual version** of resource(s). It abstracts the real characteristics of the resource(s) and presents them in a new way that is easier, more efficient, and flexible to deal with.
+Virtualization is a method that allows the users to create the **virtual version** of resource(s). It **abstracts the real characteristics of the resource(s) and presents them in a new way that is easier, more efficient, and flexible to deal with.**
 
 When we virtualize a physical resource, we hide the complexities and the details of this resource and create more simple view of this resource. This new virtualized resource can be seen as a layer between the physical resource and the application that will use that physical resource. After virtualizing a resource, the application will use this virtualized resource to access to the physical resource. 
 
@@ -110,11 +110,11 @@ When the operating system presents the storage devices as files and directories 
 
 In another example, the operating system can present the physical memory as a large space of virtual addresses. In that case, each virtual address in that space can point to a different address location in the physical memory. And the programs can use this space of the virtual addresses to read the data in a specific address of the physical memory. Representing the physical memory this way allows the programs to operate like they have access to a large memory space even though the memory is limited.
 
-So these kinds of services brings abstraction, simplification and convenience for the users. Operating systems also ensures consistent and predictable environment for applications and users. This is the another service of the operating systems and it can be called as standardization.
+So these kinds of services brings **abstraction**, **simplification** and **convenience** for the users. Operating systems also ensures consistent and predictable environment for applications and users. This is the another service of the operating systems and it can be called as **standardization**.
 
-At the end of the day, operating system is just a program that runs with special privileges to implement allocation, protection, reclamation, virtualization, and the services that are structured on top of it. 
+At the end of the day, **operating system** is just a **program** that **runs with special privileges** to **implement allocation, protection, reclamation, virtualization**, and **the services that are structured on top of it**. 
 
-If we want to look from a different perspective, operating system provides a containers of resources. And this should make the usage of the computer simpler.
+If we want to look from a different perspective, operating system **provides a containers of resources**. And this should make the usage of the computer simpler.
 
 Okay but what are the different types of operating systems ? And what are the different operating systems architectures ? 
 
@@ -132,7 +132,73 @@ Okay but what are the different types of operating systems ? And what are the di
 - Personal Computer (PC) operating system
 - Embedded operating system
 - Real-Time operating system
-- Smart card operating system     
+- Smart card operating system
+
+# Different Architectures of Operating Systems
+
+- Monolithic
+- Layered systems
+- Microkernels
+- Client-server
+- Virtual machines
+
+So at the end, the operating system should provide **convenience** to users and programmers by creating an environment that is easy to deal with the underlying hardware of the computers/devices. It should provide **efficiency** to the users and progammers while ensuring efficient usage of the resources. Lastly, as the new technologies emerge in the hardware, operating system should be able to **evolve** and **adapt to these changes** in a flexible manner.
+
+# Operating System Services 
+
+- Program development
+Operating system **provides tools** such as **compilers, debuggers, IDEs** that are useful for **program development.**
+
+- Program execution
+It is also responsible from **executing programs** by **loading these programs into memory**, **allocating whatever resources they need**, and **starting their execution**.
+
+- Access to IO devices
+IO devices are **keyboards, mouse, printers**, etc. Operating system **manages the access to these devices**.
+
+- Controlled access to files
+**File creation, deletion, reading, writing are the services that are provided by the operating system to access to the data in storage devices**. And operating system implements control mechanisms to **ensure** that the **files are accessed by authorized users**.
+
+- System access
+Operating system also **controls access to the system resources and services**. It implements user authentication and provides user accounts, passwords, etc. to provide unauthorized access to the system resources. It also enables the users to make a request whenever they want to access to the services provided by the operating system (e.g., opening a file, reading data from a file, writing data to a file, etc.). This request is also called **system call** (e,g,. open(), read(), write(), etc.)
+
+- Error detection and response
+When the program is executed or in any other system operation, an error may occur. Operating system **provides error handling and exception mechanisms, takes corrective actions for these errors, and displays these errors to the users.**
+
+- Accounting
+**Recording the resource usage/consumption/utilization** is another service provided by the operating system.
+
+# Hardware and Software Infrastructure
+
+```
+
+-------------------------------------------------------------  
+|     Application programs              |
+|----------------------------------     |
+|     Libraries/utilities         |     |       Software
+|------------------------------   |     |
+|     Operating system        |   |     |
+|------------------------------------------------------------
+|     Execution hardware                |
+|                -----------------------
+|                |                      |
+|-------------------------              |
+|     Bus                |   Memory     |       Hardware 
+|                        | translation* |    
+----------------------------------------
+| IO devices |        |      Main       |
+|    and     |        |     memory      |
+| networking |        |                 |
+--------------        ---------------------------------------
+```
+
+**Memory translation is converting the virtual address space into the corresponding physical memory address that the hardware can use to access the actual data in the main memory*
+
+So operating system is manager, and the programs, applications, and processes are the customers. Hardware in this example is the one who provdes the resources. The operating system works in different environments and under different restrictions.
+
+# CPU/Processor 
+
+
+
 
 # Note 
 
