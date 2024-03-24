@@ -213,6 +213,45 @@ We can group the registers under different categories:
 # How Processors Work ? 
 
 
+**CPU Cycles**: 
+
+
+```
+Fetch unit -> Decode unit -> Execute unit
+
+```
+```
+Fetch unit -> Decode unit                         Execute Unit
+                          \                     /
+                           \____ Holding Buffer - Execute Unit   
+                           /                    \ 
+                          /                       Execute Unit
+Fetch unit -> Decode unit
+
+
+```
+
+Pipeline: Fetch the instruction that will be executed after 2 steps (n+2) from the memory while decoding the instruction that will be executed in the next step (n+1) while executing the instruction in the current step (n). 
+
+Here fetching means retrieving instruction from the memory. Decoding means interpreting the binary or machine code instruction to understand its meaning and how it should be executed. And executing means just executing the instruction. 
+
+# Memory Storage Hierarchy 
+
+```
+       --------- 
+       Registers
+      ------------
+         Cache
+     ---------------
+       Main memory
+   -------------------
+      Magnetic disk
+  -----------------------
+       Magnetic tape
+----------------------------
+```
+
+
 
 # Note 
 
