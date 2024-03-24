@@ -179,19 +179,19 @@ When the program is executed or in any other system operation, an error may occu
 |     Operating system        |   |     |
 |------------------------------------------------------------
 |     Execution hardware                |
-|                -----------------------
+|                -----------------------|
 |                |                      |
 |-------------------------              |
 |     Bus                |   Memory     |       Hardware 
 |                        | translation* |    
-----------------------------------------
+|---------------------------------------|
 | IO devices |        |      Main       |
 |    and     |        |     memory      |
 | networking |        |                 |
 --------------        ---------------------------------------
 ```
 
-**Memory translation is converting the virtual address space into the corresponding physical memory address that the hardware can use to access the actual data in the main memory*
+**Memory translation is converting a virtual address into the corresponding physical memory address that the hardware can use to access the actual data in the main memory*
 
 So operating system is manager, and the programs, applications, and processes are the customers. Hardware in this example is the one who provdes the resources. The operating system works in different environments and under different restrictions.
 
