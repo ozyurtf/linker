@@ -197,7 +197,18 @@ So operating system is manager, and the programs, applications, and processes ar
 
 # CPU/Processor 
 
+Each CPU has a specific set of instructions that are represented in binary form to follow. And this set of instructions is called **Instruction Set Architecture (ISA)**. 
 
+In addition, CPUs contains a special storage locations within themselves to hold **data, instructions, memory addresses, etc.** **during the execution of a program**. They are very close to the execution units of the processors and that's why they can provide much faster access to the data when they are needed during the execution of a program compared to data in main memory or disk. 
+
+We can group the registers under different categories: 
+
+- General registers: These registers are used to hold variables, and results that are obtained during the execution of the program temporarily.
+- Special registers 
+  - Program counter: This is one of the special registers that is visible to the programmer. It contains the memory address of the next instruction.
+  - Stack pointer: Another special register is stack pointer. It points to the top of the current stack in memory. This is visible to the programmer as well.
+  - Condition registers: 
+  - Program status word (PSW): This register contains bits that indicate the operating mode of the CPU (e.g., kernel mode, user mode), 
 
 
 # Note 
