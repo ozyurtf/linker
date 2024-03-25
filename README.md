@@ -266,10 +266,31 @@ Here fetching means retrieving instruction from the memory. Decoding means inter
 - Registers are fasters accessible storage units within the CPU. They hold the data, instructions, and addresses that are immediately needed for execution. 
 - Cache is another fast storage unit. It is located near the CPU. It acts like a temporary storage between the CPU and main memory. It stores frequently accessed data and instructions. It is faster to access to the data in cache compared to the main memory, magnetic disk, and magnetic tape but slower compared to the registers.
 - Main memory is the primary storage location for data and instructions during the execution of a program. It holds the data of the currently running program.
-- Magnetic disks are another storage units that have larger capacities compared to main memory, cache, and register. They continue storing the data even when they are turned off unlike main memory.
-- Magnetic tape has the largest capacities among all the options. It is often used for backup and archival purposes. Like in magnetic disks, the data are stored even if the magnetic tape is turned off. 
+- Magnetic disks are another storage units that have larger capacities compared to main memory, cache, and register. A disk can be considered as a device that consists of multiple sub-devices/components. These sub-devices may include disks, read-write head that is responsible from reading/writing data from/to the disk, etc. Each sub-device has a specific role in the overall functioning of the disk. The smallest physical unit of data storage is called **sector** in the disk. Each sector has a unique address and this address identifies the location of the unit of data storage on the disk. In addition disks have read/write heads. These heads move across the surface of the platters to access the data. To read or write data, these heads need to be positioned over the appropriate sector on the platter. The time that is required to move these heads to the desired location is an important factor in the performance of the disk. And the time it takes to move the head from the current location to the target location is called **seek time**. This is an important metric because through this way, we can measure the latency of data access. Lower seek time, for example, means faster access to the data. In addition, disks consume power during operations. That's why power maangement techniques (e.g., adjustment of the rotational speed based on the workload, the use of low-power modes in certain time frames, etc.) are used to reduce energy consumption and extend the life of the disk. Lastly, disks continue storing the data even when they are turned off unlike main memory.
+- Magnetic tape has the largest capacities among all the options. It is often used for backup and archival purposes. Like in magnetic disks, the data are stored even if the magnetic tape is turned off.
 
 # CPU Caches 
+
+The motivation behind using caches is that if there is a data/instruction that was used during the execution of a program recently, that data/instruction will probably be used again in the near future. So why not we store them in temporary storage units that are close to the CPU so that we can access to the frequently used data/instructions faster ? 
+
+When a program is executed, if an access to some data is required during the execution, CPU first checks the registers in itself to see if the data is in there. If not, it sends a request to cache controller. And cache controller checks if the data is already present in the cace. If CPU finds the data it is looking for in there, we call this **cache hit** and cache controller retrieves the data from the cache to the CPU. If the data is not found in the caches, we call this **cache miss** and in that case, cache controller sends a request to the main memory to fetch the required data from there. Then the main memory retrives data and give it to the cache controller so that it can store the copy of that data for the future use and then provides it to the CPU. 
+
+Note that there are different levels of the caches such as L1, L2, L3, etc. L1 cache for example is the one that is closest to the CPU. As the level decreases, the distance of the cache from the CPU increases. And CPU basically searches for each one of these caches starting from L1 until the data is found. 
+
+But when we use cache, we encounter some issues that need to be dealth with. For example, caches takes the data from the main memory and stores it temporarily. If there are multiple CPUs in a system, each of these CPU deals with its own cache. In that case, if multiple CPUs tries to access and modify the same shared data, this results in data inconsistency if the changes that are made by one CPU are not reflected in the caches of the other CPUs. So we need a mechanism to ensure that all CPUs can view the consistent view of the shared data. This is called **cache coherency**. 
+
+# Operating System Major Components
+
+- Process and Thread Management: Creating, implementing/scheduling, and terminating processes and threads. 
+- Resource Management: Managing the resources. 
+  - CPU
+  - Memory
+  - IO Device
+- File System: Organization, storage, retrieval, and management of files and directories on storage devices.
+- Bootstrapping (Booting): Starting up the operating system when the computer is turned on
+
+# CPU Execution Modes 
+
 
 
 # Note 
