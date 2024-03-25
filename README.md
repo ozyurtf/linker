@@ -291,6 +291,87 @@ But when we use cache, we encounter some issues that need to be dealth with. For
 
 # CPU Execution Modes 
 
+Sometimes CPU uses different privileges and access rights during its operations. These different privileges and access rights can be called as execution modes as well. We can think of execution mode as some kind of like operating state. And each of these modes have different rules and capabilities. 
+
+Two examples of the execution modes are kernel mode and user model. And the CPU switches between these modes based on the type of code that is being executed and the required privileges. 
+
+**Kernel mode**, for example, is highly privileged mode. This means that when the CPU is running in kernel mode, it has unrestricted access to all system resources and can execute all available CPU instructions. 
+
+The operating system kernel runs in kernel mode because it provides the core services in a protected way. 
+
+**User mode**, on the other hand, can be seen as unprivileged or problem mode if we compare it with the kernel mode. It is a restricted execution mode. That's why when the CPU is running in user mode, it has limited access to the system resources and it can only execute a subset of CPU instructions. User mode excludes user from accessing critical resources. and applications/programs run in user mode for example. 
+
+```
+|---------------------------|------------------
+|          Ring 3           | Least Privileged
+|  -----------------------  |------------------
+|  |       Ring 2        |  | 
+|  |  |---------------|  |  |------------------
+|  |  |    Ring 1     |  |  |
+|  |  |   ---------   |  |  |------------------
+|  |  |  | Ring 0 |   |  |  | 
+|  |  |  |        |   |  |  | Most Privileged
+|  |  |  | Kernel |   |  |  |
+|  |  |  ----------   |  |  |------------------
+|  |  |               |  |  |
+|  |  |---------------|  |  |------------------
+|  |                     |  |
+|  |---------------------|  |------------------
+|                           | Least Privileged
+|---------------------------|------------------
+
+      Protection Rings
+```
+
+But the applications/programs that are running in the user mode sometimes need to perform system related tasks such as reading from a file, writing to a file, etc. However, they cannot do this in the user mode because user mode does not provide the privileges to access the hardware resources. That's why in those cases, we should be able to switch from the user mode to the kernel mode. But how to do that ? 
+
+# Exception / Trap / Interrupt 
+
+There are mechanisms named exceptions, traps and interrupts that are built into CPU. These are represented by instructions, hardware signals or bit patterns in the CPU. And they are used to handle specific events/conditions. 
+
+The handlings of exceptions, traps, and interrupts is performed by predefined routines/rules.
+
+Exceptions, for example, are events that happens when CPU detects an unusual condition during the execution of the program. They occur automatically when CPU detects an error or an exceptional condition. Some of the examples of the exceptions are divison by zero, execution of an illegal instruction. Also exceptions are synchronous which means they occur as a direct result of the execution of specific instructions. 
+
+But sometimes programs may need to request services or perform system related tasks. In those cases, a special kind of exception named **traps** are used. Traps are the mechanisms that are intentionally triggered by the user programs to request services from the operating system, perform system related tasks or access system resources that require the kernel level privileges. Requesting services from the operating system is done through another mechanism that provides an interface between the application and the operating system kernel. This mechanism is called **system call**. Systems calls are invoked with traps and as a result of that they transfer the control from user to the kernel. 
+
+Some of the time frames when interrupts are used might be when a program allocates memory dynamically during the runtime with functions like malloc() or new(), when a program reads from or writes to a file, or when a new process is created with the existin process and fork() function. These kinds of functions (malloc(), new(), fork(), open(), read(), etc.) Like exceptions, they are synchronous which means they occur as a direct response to the execution of a specific instruction.
+
+Aside from these, sometimes hardware devices such as keyboard, mouse may want to notify the CPU about a condition that requires immediate attention. Interrupts may happen when the user clicks a mouse, uses the keyboard, or the timer expires, etc.. By sending interrupts, we basically mean that the device needs attention. Unlike exceptions and traps, interrupts are asynchronous which means that their occurences are triggered by external events and independent from the program's execution. 
+
+# CPU Execution Modes Switches 
+
+User Mode -> Kernel Mode 
+- Trap
+- Interrupt
+- Exception
+
+Kernel Mode -> Kernel Mode 
+- Interrupt
+- Exception
+
+Kernel Mode -> User Mode 
+- Return from Interrupt (RFI)
+
+```
+  ---------------
+  | Application |
+  | ----------- |
+  | Libraries   |
+  | ----------- |
+                        User Space 
+------------------------------------
+                       Kernel Space
+  ---------------
+  | Portable OS |
+  |   Layer     |
+  | ----------- |
+  |   Machine   |
+  |  dependent  |
+  |    layer    |
+  | ----------- |
+
+```
 
 
 # Note 
