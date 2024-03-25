@@ -364,6 +364,10 @@ Kernel Mode -> User Mode
   |    layer    |
   | ----------- |
 
+Portable OS layer contains high level code. The goal of this layer is to provide a consistent interface to the high-level programs regardless of the underlying hardware. System calls come to here from the user space and the services that are requested from the user space are provided from the hardware to the user space through here.
+
+Machine dependent layer is also known as hardware-dependent layer since as we might guess it deals with the hardware components. This layer directly interacts with the hardware to provide the resources and services coming from the user space.
+
 ```
 
 
