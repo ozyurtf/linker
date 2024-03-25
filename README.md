@@ -110,26 +110,19 @@ So we explained what do we mean when we say that operating system manages the re
 
 # Operating System Services 
 
-- Program development
-Operating system **provides tools** such as **compilers, debuggers, IDEs** that are useful for **program development.**
+- Program development: Operating system **provides tools** such as **compilers, debuggers, IDEs** that are useful for **program development.**
 
-- Program execution
-It is also responsible from **executing programs** by **loading these programs into memory**, **allocating whatever resources they need**, and **starting their execution**.
+- Program execution: It is also responsible from **executing programs** by **loading these programs into memory**, **allocating whatever resources they need**, and **starting their execution**.
 
-- Access to IO devices
-IO devices are **keyboards, mouse, printers**, etc. Operating system **manages the access to these devices**.
+- Access to IO devices: IO devices are **keyboards, mouse, printers**, etc. Operating system **manages the access to these devices**.
 
-- Controlled access to files
-**File creation, deletion, reading, writing are the services that are provided by the operating system to access to the data in storage devices**. And operating system implements control mechanisms to **ensure** that the **files are accessed by authorized users**.
+- Controlled access to files: **File creation, deletion, reading, writing are the services that are provided by the operating system to access to the data in storage devices**. And operating system implements control mechanisms to **ensure** that the **files are accessed by authorized users**.
 
-- System access
-Operating system also **controls access to the system resources and services**. It implements user authentication and provides user accounts, passwords, etc. to provide unauthorized access to the system resources. It also enables the users to make a request whenever they want to access to the services provided by the operating system (e.g., opening a file, reading data from a file, writing data to a file, etc.). This request is also called **system call** (e,g,. open(), read(), write(), etc.)
+- System access: Operating system also **controls access to the system resources and services**. It implements user authentication and provides user accounts, passwords, etc. to provide unauthorized access to the system resources. It also enables the users to make a request whenever they want to access to the services provided by the operating system (e.g., opening a file, reading data from a file, writing data to a file, etc.). This request is also called **system call** (e,g,. open(), read(), write(), etc.)
 
-- Error detection and response
-When the program is executed or in any other system operation, an error may occur. Operating system **provides error handling and exception mechanisms, takes corrective actions for these errors, and displays these errors to the users.**
+- Error detection and response: When the program is executed or in any other system operation, an error may occur. Operating system **provides error handling and exception mechanisms, takes corrective actions for these errors, and displays these errors to the users.**
 
-- Accounting
-**Recording the resource usage/consumption/utilization** is another service provided by the operating system.
+- Accounting: **Recording the resource usage/consumption/utilization** is another service provided by the operating system.
 
 In addition, we talked about what abstraction is previously. When the operating system presents the **storage devices** as **files and directories** in a hierarchical structure, for example, this can be given as an example of a **service** provided to the user. Because now the user can interact with the files and directories in a simple way without worrying about the complexities and details of how the data is stored physically in the storage devices in the hardware. 
 
