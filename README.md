@@ -201,8 +201,10 @@ CPU generally has one or more cores. These **cores** are **physical processing u
 And we can divide the core into three groups: 
 
 - Memory: In core, a **memory unit** is built to store & transfer information fastly/efficiently. This memory unit consists of **registers** and **cache**.
-- Control Unit: These units **fetches** the **instructions** that are represented as bits from the memory unit, and **translates** those **instructions** into **electricity** or maybe light so that they can be **sent** to **other parts of the computer as signal**. 
-- Arithmetic Logic Unit: This unit includes **electronic circuits**. And these circuits are responsible from **arithmetic and logic operations**. 
+- Control Unit: These units **fetches** the **instructions** that are represented as bits* from the memory unit, and **translates** those **instructions** into **electricity** or maybe light so that they can be **sent** to **other parts of the computer as signal**. 
+- Arithmetic Logic Unit: This unit includes **electronic circuits**. And these circuits are responsible from **arithmetic and logic operations**.
+
+**Note**: The electronic devices can represent two states depending on whether an electrical current occurs or not. The existence of electrical current is represented as 1 and the absence of electrical current is represented as 0. And this forms the basis of the binary number system. The value of the 0 or 1 is also called bit. With 1 bit, we can represent only 2^1 combinations: 0 or 1. With 2 bits, we can represent 2^2 = 4 combinations (00, 01, 10, 11). And by combining multiple bits, we can create larger units of data. Some of these large units of data have some specific names (e.g. byte, kilobyte, megabyte, gigabyte, etc.)
 
 Each CPU has a specific set of instructions that are represented in binary form to follow. And this set of instructions is called **Instruction Set Architecture (ISA)**. 
 
@@ -370,24 +372,6 @@ Machine dependent layer is also known as hardware-dependent layer since as we mi
 
 ```
 
-
-# Note 
-
-The electronic devices can represent two states depending on whether an electrical current occurs or not. The existence of electrical current is represented as 1 and the absence of electrical current is represented as 0. And this forms the basis of the binary number system. The value of the 0 or 1 is also called bit. With 1 bit, we can represent only 2^1 combinations: 0 or 1. With 2 bits, we can represent 2^2 = 4 combinations (00, 01, 10, 11). 
-
-And by combining multiple bits, we can create larger units of data. Some of these large units of data have some specific names. 
-
-For example, when we combine 
-
-- **8 bits**, this 8 bits unit of data is called **bytes**. (2^3)
-
-- **1024 bytes** this 1024 bytes unit of data is called **kilobytes**. (2^10*2^3 = 2^13)
-
-- **1024 kilobytes**, this 1024 kilobytes unit of data is called **megabyte**. (2^10*2^13) = 2^23)
-
-- **1024 megabytes**, this 1024 megabytes unit of data is called **gigabyte**. (2^10*2^23) = 2^33)
-
-By using these data units, computers can represent and process a wide range of data (e.g. numbers, characters, instructions, etc.).
 
 
 
